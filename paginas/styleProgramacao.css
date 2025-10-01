@@ -209,7 +209,7 @@ h2{
 }
 
 
-/* ====== RESPONSIVIDADE ====== */
+/* responsividade */
 @media (max-width: 768px) {
     .topo {
         flex-direction: column;
