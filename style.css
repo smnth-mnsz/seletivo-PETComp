@@ -468,7 +468,6 @@ h2{
     }
 }
 
-/* Celulares até 768px */
 @media (max-width: 768px) {
     /* HEADER */
     .topo {
@@ -535,7 +534,6 @@ h2{
         text-align: justify;
     }
 
-    /* INFOGERAIS */
     .infogerais {
         flex-direction: column;
         gap: 20px;
@@ -608,7 +606,7 @@ h2{
     }
 }
 
-/* Celulares pequenos até 480px */
+/* celular */
 @media (max-width: 480px) {
     .logo-titulo img {
         width: 45px;
