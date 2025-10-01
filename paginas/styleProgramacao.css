@@ -207,3 +207,105 @@ h2{
     color: #f4f9e9;
     text-decoration: underline;
 }
+
+
+/* ====== RESPONSIVIDADE ====== */
+@media (max-width: 768px) {
+    .topo {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    .logo-titulo {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo-titulo h1 {
+        font-size: 1.4em;
+        white-space: normal;
+        text-align: center;
+    }
+
+    .tira_menu {
+        flex-direction: column;
+        gap: 10px;
+        padding-left: 0;
+        margin-top: 15px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .tira_menu a {
+        display: block;
+        width: 80%;
+        text-align: center;
+    }
+
+    .programaçaoMain {
+        padding: 20px;
+    }
+
+    .programaçaoMain .intro-programacao p {
+        font-size: 1.2em;
+    }
+
+    .participantesPreletores,
+    .participantesCantores {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .participante {
+        width: 90%;
+        max-width: 320px;
+    }
+
+    .participante img {
+        height: auto;
+        max-height: 200px;
+    }
+
+    h2 {
+        font-size: 1.4em;
+        margin-bottom: 20px;
+    }
+
+    .rodape {
+        padding: 20px 10px;
+        text-align: center;
+    }
+
+    .contatos h1 {
+        font-size: 1.2em;
+    }
+
+    .contatos h3,
+    .contatos a {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-titulo img {
+        width: 50px;
+    }
+
+    .logo-titulo h1 {
+        font-size: 1.2em;
+    }
+
+    .tira_menu a {
+        width: 100%;
+        padding: 12px;
+        font-size: 0.9em;
+    }
+
+    .programaçaoMain .intro-programacao p {
+        font-size: 1em;
+    }
+}
