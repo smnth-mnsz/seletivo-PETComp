@@ -1,0 +1,225 @@
+@font-face {
+  font-family: 'MinhaFonte';
+  src: url('THEBOLDFONT-FREEVERSION.ttf') format('truetype');
+}
+
+body{
+    background-color: #B4B8AB;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 10px 30px;
+    background-color: #284b63;
+}
+
+.logo-titulo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-titulo h1 {
+    color:#B4B8AB; 
+    font-size: 1.8em;
+    margin: 0; 
+    white-space: nowrap;
+}
+
+.logo-titulo img {
+    width: 60px;
+    height: auto;
+}
+
+.tira_menu{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 200px;
+    text-align: center;
+
+}
+.tira_menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+    /* estilo do botao do menu */
+    background-color: #f4f9e9;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+
+.tira_menu a:hover{
+    background-color: #153243;
+    color: #f4f9e9;
+
+} 
+
+h3{
+    color: #153243;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 30px;
+
+}
+p{
+    color: #f4f9e9;
+    font-size: 5em;
+    font-family: 'MinhaFonte', sans-serif;
+    text-align: center;
+    margin: 30px;
+}
+
+.inscricao-main {
+    padding: 40px 20px;
+}
+
+.intro-inscricao {
+    margin: 0;
+    padding: 0 20px;
+}
+
+.intro-inscricao p {
+    color: #284b63;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    margin: 10px 0 50px 0;
+    text-align: center; 
+    font-family: Arial, Helvetica, sans-serif;
+    white-space: normal;
+}
+
+.formulario-container {
+    max-width: 600px; 
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f4f9e9; 
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-evento {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+}
+
+.campo-checkbox,
+.btn-enviar {
+    grid-column: 1 / -1; 
+}
+
+.campo label,
+.campo-checkbox label {
+    display: block;
+    font-weight: bold;
+    color: #153243;
+    margin-bottom: 5px;
+    font-size: 1em;
+}
+
+.campo input[type="text"],
+.campo input[type="email"],
+.campo input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #B4B8AB;
+    border-radius: 5px;
+    box-sizing: border-box; 
+    font-size: 1em;
+}
+
+.campo-checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.campo-checkbox input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2); 
+}
+
+.campo-botao {
+    grid-column: 2/ -1; 
+    display: flex; 
+    justify-content: flex-end; 
+    margin-top: 10px;
+}
+
+.btn-enviar {
+    background-color: #284b63;
+    color: #f4f9e9;
+    border: none;
+    padding: 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 50px;
+}
+
+.btn-enviar:hover {
+    background-color: #153243;
+}
+
+@media (max-width: 768px) {
+    .formulario-evento {
+        grid-template-columns: 1fr;
+    }
+}
+
+.rodape{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding: 0;
+    margin: 0;
+    background-color: #284b63;
+}
+
+.contatos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-block-end: 1rem;
+}
+
+.contatos h1{
+    font-size: 1.6em;
+    margin-bottom: 0;
+    color: #f4f9e9;
+}
+
+.contatos h3{
+    font-size: 1.2em;
+    margin-bottom: 0;
+    color: #B4B8AB;
+}
+
+.contatos a {
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-bottom: 0;
+    color: #B4B8AB;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    
+}
+
+.contatos a:hover {
+    color: #f4f9e9;
+    text-decoration: underline;
+}
